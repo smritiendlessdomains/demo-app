@@ -6,7 +6,8 @@ import { usePathname } from "next/navigation";
 const navItems = [
   { name: "Paragraph", href: "/paragraph" },
   { name: "Substack", href: "/substack" },
-  { name: "Parked Domain", href: "/parked-domain" },
+  { name: "Parked Domain Minimal", href: "/parked-domain-minimal" },
+  { name: "Parked Domain Web3", href: "/parked-domain-web3" },
 ];
 
 export default function Navbar() {
