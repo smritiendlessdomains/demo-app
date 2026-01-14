@@ -1,4 +1,4 @@
-import Image from "next/image";
+import EzoicAd from "../components/EzoicAd";
 
 export default function ParkedDomainMinimal() {
   return (
@@ -13,6 +13,11 @@ export default function ParkedDomainMinimal() {
         </p>
       </section>
 
+      {/* 🔹 AD SLOT */}
+      <div className="max-w-5xl mx-auto px-6 my-10">
+        <EzoicAd id={101} />
+      </div>
+
       {/* Profile */}
       <section className="max-w-5xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-10">
         {/* Left */}
@@ -24,45 +29,15 @@ export default function ParkedDomainMinimal() {
               decentralized digital identity showcasing work, links, and
               portfolio.
             </p>
-
-            {/* Socials */}
-            <div className="mt-6 space-y-2">
-              <a href="#" className="block text-indigo-600 hover:underline">
-                Twitter / X
-              </a>
-              <a href="#" className="block text-indigo-600 hover:underline">
-                GitHub
-              </a>
-              <a href="#" className="block text-indigo-600 hover:underline">
-                LinkedIn
-              </a>
-            </div>
           </div>
         </div>
 
         {/* Right */}
         <div className="md:col-span-2">
           <h2 className="text-2xl font-semibold mb-6">Portfolio</h2>
-
-          <div className="grid sm:grid-cols-2 gap-6">
-            {["AI Identity Platform", "Web3 Profile Builder", "RSS Content Engine"].map(
-              (item) => (
-                <div
-                  key={item}
-                  className="bg-white rounded-xl shadow p-5 hover:shadow-lg transition"
-                >
-                  <h3 className="font-semibold">{item}</h3>
-                  <p className="mt-2 text-sm text-gray-600">
-                    Short description of the project, tools used, and outcome.
-                  </p>
-                </div>
-              )
-            )}
-          </div>
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="text-center py-6 text-sm text-gray-500">
         © 2026 smriti.eth · Parked Domain Demo
       </footer>

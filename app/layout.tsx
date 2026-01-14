@@ -37,7 +37,19 @@ export default function RootLayout({
             ezstandalone.cmd = ezstandalone.cmd || [];
           `}
         </Script>
-      </head>
+        
+        <Script id="al5sm-zone" strategy="afterInteractive">
+          {`
+            (function(s){
+              s.dataset.zone='10461930';
+              s.src='https://al5sm.com/tag.min.js';
+            })([document.documentElement, document.body]
+              .filter(Boolean)
+              .pop()
+              .appendChild(document.createElement('script')));
+          `}
+        </Script>
+    </head>
 
       <body>
         <Navbar />
